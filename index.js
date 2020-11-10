@@ -1,10 +1,8 @@
 const chalk = require('chalk');
 
-const phrase = 'hi!';
+const args = process.argv.slice(2);
 
-
-
-
+const phrase = args.join(' ');
 
 const catSay = `
       ／＞　 フ
