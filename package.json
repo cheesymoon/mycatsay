@@ -11,6 +11,16 @@
     "type": "git",
     "url": "git+https://github.com/cheesymoon/mycatsay.git"
   },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -20,5 +30,10 @@
   "dependencies": {
     "chalk": "^4.1.0",
     "commitizen": "^4.2.2"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "husky": "^4.3.0"
   }
 }
