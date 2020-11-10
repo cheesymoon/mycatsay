@@ -1,12 +1,21 @@
 const chalk = require('chalk');
 
 const args = process.argv.slice(2);
+const angryIndex = args.indexOf('--angry')
 
-const phrase = args.join(' ');
+const isAngry = angryIndex >= 0;
+if (isAngry) {
+  args.splice(angryIndex);
+}
+const words = args.join(' ');
+
+const phrase = isAngry
+  ? chalk.redBright.bold(words)
+  : chalk.yellowBright(words);
 
 const catSay = `
       ／＞　 フ
-     |  _　_ |
+     |  ${isAngry ? '\\' : '_'}　${isAngry ? '/' : '_'} |
    ／\` ミ＿xノ    ${phrase && `< ${phrase}`}
  /　　 　　 |
 /　 ヽ　　 ﾉ
