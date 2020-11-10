@@ -1,3 +1,11 @@
+# [1.1.0](https://github.com/cheesymoon/mycatsay/compare/v1.0.1...v1.1.0) (2020-11-10)
+
+
+### Features
+
+* **cat:** make cat say what you want it to say ([a4373bc](https://github.com/cheesymoon/mycatsay/commit/a4373bc79edf6ef46f3d74c0b635f979953b774b))
+* **cat:** make it angry ([762da71](https://github.com/cheesymoon/mycatsay/commit/762da7150e067fdde742e16518af757937f893cb))
+
 ## [1.0.1](https://github.com/cheesymoon/mycatsay/compare/v1.0.0...v1.0.1) (2020-11-10)
 
 
